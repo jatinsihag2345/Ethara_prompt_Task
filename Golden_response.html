@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nexus — The intelligent platform that transforms how teams build, ship, and scale. Enterprise-grade infrastructure for modern teams." />
+  <meta name="keywords" content="SaaS, platform, productivity, teams, enterprise, workflow" />
+  <meta name="author" content="Nexus Inc." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nexus — Build Beyond Limits" />
+  <meta property="og:description" content="The intelligent platform that transforms how teams build, ship, and scale." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nexus.io" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Nexus — Build Beyond Limits" />
+  <meta name="twitter:description" content="The intelligent platform that transforms how teams build, ship, and scale." />
+
+  <title>Nexus — Build Beyond Limits</title>
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar" role="banner">
+    <nav class="nav-container" aria-label="Main navigation">
+      <!-- Logo -->
+      <a href="#" class="nav-logo" aria-label="Nexus home">
+        <span class="logo-mark">N</span>
+        <span class="logo-text">nexus</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#testimonials" class="nav-link">Clients</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Dark/Light Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <span class="theme-icon theme-icon--dark">☽</span>
+          <span class="theme-icon theme-icon--light">○</span>
+        </button>
+        <a href="#contact" class="btn btn-primary nav-cta">Get Started</a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button class="nav-hamburger" id="hamburger" aria-label="Open mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#testimonials" class="nav-link">Clients</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary">Get Started</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero" aria-label="Hero section">
+      <!-- Decorative background -->
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-orb hero-orb--1"></div>
+        <div class="hero-orb hero-orb--2"></div>
+        <div class="hero-grid"></div>
+      </div>
+
+      <div class="container hero-content">
+        <!-- Eyebrow label -->
+        <div class="hero-eyebrow reveal">
+          <span class="eyebrow-dot"></span>
+          <span>Now in public beta — 2,400+ teams onboard</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="hero-headline reveal reveal--delay-1">
+          Build <em>beyond</em><br />every limit.
+        </h1>
+
+        <!-- Subheading -->
+        <p class="hero-sub reveal reveal--delay-2">
+          Nexus is the intelligent infrastructure layer that unifies your team's workflow, 
+          accelerates delivery, and scales effortlessly — from zero to enterprise.
+        </p>
+
+        <!-- CTA row -->
+        <div class="hero-cta-row reveal reveal--delay-3">
+          <a href="#contact" class="btn btn-primary btn-lg">
+            Start for free
+            <span class="btn-arrow">→</span>
+          </a>
+          <a href="#features" class="btn btn-ghost btn-lg">
+            See how it works
+          </a>
+        </div>
+
+        <!-- Social proof -->
+        <div class="hero-proof reveal reveal--delay-4">
+          <div class="proof-avatars" aria-hidden="true">
+            <div class="avatar" style="--i:0">A</div>
+            <div class="avatar" style="--i:1">B</div>
+            <div class="avatar" style="--i:2">C</div>
+            <div class="avatar" style="--i:3">D</div>
+          </div>
+          <p class="proof-text"><strong>4.9 / 5</strong> from 1,200+ reviews</p>
+        </div>
+      </div>
+
+      <!-- Hero dashboard mockup -->
+      <div class="hero-visual reveal reveal--delay-2" aria-hidden="true">
+        <div class="dashboard-card">
+          <div class="dash-header">
+            <div class="dash-dots"><span></span><span></span><span></span></div>
+            <span class="dash-title">nexus / dashboard</span>
+          </div>
+          <div class="dash-body">
+            <div class="dash-stat">
+              <div class="stat-label">Deployments</div>
+              <div class="stat-value">2,847</div>
+              <div class="stat-change positive">↑ 18.4%</div>
+            </div>
+            <div class="dash-stat">
+              <div class="stat-label">Uptime</div>
+              <div class="stat-value">99.99%</div>
+              <div class="stat-change positive">↑ stable</div>
+            </div>
+            <div class="dash-stat">
+              <div class="stat-label">Team Velocity</div>
+              <div class="stat-value">341 pts</div>
+              <div class="stat-change positive">↑ 32.1%</div>
+            </div>
+            <div class="dash-bars" aria-label="Activity bars">
+              <div class="bar" style="--h:40%"></div>
+              <div class="bar" style="--h:65%"></div>
+              <div class="bar" style="--h:50%"></div>
+              <div class="bar" style="--h:80%"></div>
+              <div class="bar" style="--h:60%"></div>
+              <div class="bar" style="--h:90%"></div>
+              <div class="bar" style="--h:75%"></div>
+              <div class="bar active" style="--h:100%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== LOGOS MARQUEE ========== -->
+    <section class="logos-section" aria-label="Trusted by leading companies">
+      <div class="container">
+        <p class="logos-label">Trusted by teams at</p>
+      </div>
+      <div class="logos-track" aria-hidden="true">
+        <div class="logos-inner">
+          <span class="logo-item">Vercel</span>
+          <span class="logo-item">Stripe</span>
+          <span class="logo-item">Linear</span>
+          <span class="logo-item">Notion</span>
+          <span class="logo-item">Figma</span>
+          <span class="logo-item">Supabase</span>
+          <span class="logo-item">PlanetScale</span>
+          <span class="logo-item">Clerk</span>
+          <!-- duplicate for seamless loop -->
+          <span class="logo-item">Vercel</span>
+          <span class="logo-item">Stripe</span>
+          <span class="logo-item">Linear</span>
+          <span class="logo-item">Notion</span>
+          <span class="logo-item">Figma</span>
+          <span class="logo-item">Supabase</span>
+          <span class="logo-item">PlanetScale</span>
+          <span class="logo-item">Clerk</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FEATURES ========== -->
+    <section class="features" id="features" aria-label="Features">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">What we offer</span>
+          <h2 class="section-title">Everything your team needs, <em>nothing it doesn't.</em></h2>
+          <p class="section-sub">Nexus consolidates your fragmented stack into one coherent, intelligent platform — without the overhead.</p>
+        </div>
+
+        <div class="features-grid">
+
+          <!-- Feature Card 1 -->
+          <article class="feature-card feature-card--large reveal">
+            <div class="feature-icon" aria-hidden="true">⚡</div>
+            <h3 class="feature-title">Instant Deployments</h3>
+            <p class="feature-desc">Push to production in under 30 seconds. Nexus handles the pipeline, rollback, and zero-downtime deploys automatically.</p>
+            <div class="feature-visual">
+              <div class="terminal">
+                <div class="terminal-line"><span class="t-prompt">$</span> nexus deploy --prod</div>
+                <div class="terminal-line t-success">✓ Build complete (12.3s)</div>
+                <div class="terminal-line t-success">✓ Edge deployed globally</div>
+                <div class="terminal-line t-muted">→ https://app.nexus.io</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Feature Card 2 -->
+          <article class="feature-card reveal reveal--delay-1">
+            <div class="feature-icon" aria-hidden="true">🧠</div>
+            <h3 class="feature-title">AI-Powered Insights</h3>
+            <p class="feature-desc">Proactive anomaly detection, intelligent alerts, and performance recommendations — before issues escalate.</p>
+          </article>
+
+          <!-- Feature Card 3 -->
+          <article class="feature-card reveal reveal--delay-2">
+            <div class="feature-icon" aria-hidden="true">🔐</div>
+            <h3 class="feature-title">Enterprise Security</h3>
+            <p class="feature-desc">SOC 2 Type II certified. End-to-end encryption, SSO, RBAC, and audit logs — security without compromise.</p>
+          </article>
+
+          <!-- Feature Card 4 -->
+          <article class="feature-card reveal reveal--delay-1">
+            <div class="feature-icon" aria-hidden="true">📡</div>
+            <h3 class="feature-title">Global Edge Network</h3>
+            <p class="feature-desc">42 PoPs across 6 continents. Sub-50ms latency worldwide. Your users are always close to production.</p>
+          </article>
+
+          <!-- Feature Card 5 -->
+          <article class="feature-card reveal reveal--delay-2">
+            <div class="feature-icon" aria-hidden="true">🔗</div>
+            <h3 class="feature-title">160+ Integrations</h3>
+            <p class="feature-desc">Connect GitHub, Slack, Jira, Datadog, PagerDuty, and 155 more with one-click OAuth — no YAML required.</p>
+          </article>
+
+          <!-- Feature Card 6 — Full width -->
+          <article class="feature-card feature-card--accent reveal">
+            <div class="feature-icon" aria-hidden="true">📊</div>
+            <h3 class="feature-title">Real-Time Observability</h3>
+            <p class="feature-desc">Unified logs, traces, and metrics in a single pane. Drill from system-wide overview to individual request in two clicks.</p>
+            <div class="metrics-preview" aria-hidden="true">
+              <div class="metric-bar-row"><span>API Latency</span><div class="mbar"><div style="width:78%"></div></div><span>78ms</span></div>
+              <div class="metric-bar-row"><span>Error Rate</span><div class="mbar"><div style="width:2%"></div></div><span>0.02%</span></div>
+              <div class="metric-bar-row"><span>Throughput</span><div class="mbar"><div style="width:91%"></div></div><span>91k rps</span></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about" id="about" aria-label="About Nexus">
+      <div class="container about-grid">
+        <!-- Left: copy -->
+        <div class="about-copy">
+          <span class="section-tag reveal">Our story</span>
+          <h2 class="section-title reveal reveal--delay-1">
+            Born from <em>frustration.</em><br/>Built for clarity.
+          </h2>
+          <p class="about-body reveal reveal--delay-2">
+            In 2021, our founders were running engineering at a Series B startup — stitching together 
+            14 different tools just to ship a feature. Six months and one burnout later, they decided 
+            to build the platform they always wished existed.
+          </p>
+          <p class="about-body reveal reveal--delay-2">
+            Nexus today serves 2,400+ engineering teams, from two-person startups to Fortune 500 
+            enterprises. Our mission remains simple: eliminate the operational burden so builders 
+            can build.
+          </p>
+          <div class="about-stats reveal reveal--delay-3">
+            <div class="a-stat">
+              <div class="a-stat-num">2.4k+</div>
+              <div class="a-stat-label">Teams</div>
+            </div>
+            <div class="a-stat">
+              <div class="a-stat-num">99.99%</div>
+              <div class="a-stat-label">Uptime SLA</div>
+            </div>
+            <div class="a-stat">
+              <div class="a-stat-num">$0</div>
+              <div class="a-stat-label">Vendor lock-in</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: visual card stack -->
+        <div class="about-visual reveal reveal--delay-2" aria-hidden="true">
+          <div class="about-card about-card--back">
+            <span>Engineering Velocity</span>
+            <strong>+340%</strong>
+          </div>
+          <div class="about-card about-card--mid">
+            <span>Deploy Frequency</span>
+            <strong>Daily → Hourly</strong>
+          </div>
+          <div class="about-card about-card--front">
+            <div class="ac-label">MTTR Improvement</div>
+            <div class="ac-value">↓ 83%</div>
+            <div class="ac-sub">Mean time to recovery, post-Nexus</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="testimonials" id="testimonials" aria-label="Client testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">What clients say</span>
+          <h2 class="section-title">Loved by the teams<br/><em>building the future.</em></h2>
+        </div>
+
+        <div class="testimonials-grid">
+
+          <blockquote class="tcard reveal">
+            <p class="tcard-quote">"Nexus cut our deploy time from 45 minutes to 28 seconds. That's not an improvement — it's a transformation. Our team finally has breathing room to think."</p>
+            <footer class="tcard-author">
+              <div class="tcard-avatar">SR</div>
+              <div>
+                <div class="tcard-name">Sarah Reeves</div>
+                <div class="tcard-role">VP Engineering, Luminary Labs</div>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="tcard reveal reveal--delay-1">
+            <p class="tcard-quote">"The observability alone justified the contract. We went from flying blind to having surgical precision over every production issue. Zero regrets."</p>
+            <footer class="tcard-author">
+              <div class="tcard-avatar">MK</div>
+              <div>
+                <div class="tcard-name">Marcus Kowalski</div>
+                <div class="tcard-role">CTO, Orbit Finance</div>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="tcard reveal reveal--delay-2">
+            <p class="tcard-quote">"We evaluated Nexus against four competitors. It wasn't close. The DX, the reliability, and the support team are all exceptional. It's simply the best."</p>
+            <footer class="tcard-author">
+              <div class="tcard-avatar">PL</div>
+              <div>
+                <div class="tcard-name">Priya Lal</div>
+                <div class="tcard-role">Head of Platform, Aether Health</div>
+              </div>
+            </footer>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact" id="contact" aria-label="Contact form">
+      <div class="container contact-grid">
+
+        <!-- Left: info -->
+        <div class="contact-info">
+          <span class="section-tag reveal">Get in touch</span>
+          <h2 class="section-title reveal reveal--delay-1">Ready to ship<br/><em>faster?</em></h2>
+          <p class="contact-body reveal reveal--delay-2">Start your 14-day free trial — no credit card required. Our onboarding team will have you live in under an hour.</p>
+
+          <div class="contact-points reveal reveal--delay-3">
+            <div class="contact-point">
+              <span class="cp-icon">📧</span>
+              <span>hello@nexus.io</span>
+            </div>
+            <div class="contact-point">
+              <span class="cp-icon">💬</span>
+              <span>Live chat — typically replies in &lt; 2 min</span>
+            </div>
+            <div class="contact-point">
+              <span class="cp-icon">📞</span>
+              <span>Enterprise line: +1 (800) 639-8700</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: form -->
+        <div class="contact-form-wrap reveal reveal--delay-2">
+          <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First name <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="firstName" name="firstName" placeholder="Jane" required autocomplete="given-name" />
+                <span class="field-error" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last name <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="lastName" name="lastName" placeholder="Smith" required autocomplete="family-name" />
+                <span class="field-error" role="alert"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Work email <span class="required" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" placeholder="jane@company.com" required autocomplete="email" />
+              <span class="field-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Acme Corp" autocomplete="organization" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message <span class="required" aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your team and what you're building..." required></textarea>
+              <span class="field-error" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id="submitBtn">
+              <span class="btn-label">Send message</span>
+              <span class="btn-loading" aria-hidden="true">Sending…</span>
+              <span class="btn-arrow">→</span>
+            </button>
+            <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
+              <span>✓</span> Message sent! We'll be in touch within one business day.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-grid">
+      <!-- Brand col -->
+      <div class="footer-brand">
+        <a href="#" class="nav-logo" aria-label="Nexus home">
+          <span class="logo-mark">N</span>
+          <span class="logo-text">nexus</span>
+        </a>
+        <p class="footer-tagline">Built for teams that ship.</p>
+        <div class="footer-social" aria-label="Social links">
+          <a href="#" aria-label="Twitter / X">𝕏</a>
+          <a href="#" aria-label="GitHub">⌥</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+
+      <!-- Nav cols -->
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Changelog</a></li>
+          <li><a href="#">Roadmap</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Nexus Inc. All rights reserved.</p>
+        <p>Crafted with precision.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top" title="Back to top">↑</button>
+
+  <script src="js/theme.js" defer></script>
+  <script src="js/navbar.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/form.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
