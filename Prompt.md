@@ -1,5 +1,5 @@
 # Prompt
-
+# Cinematic Movie Streaming Platform — Premium Frontend Web Experience
 ## Context and Role
 
 As a Frontend Developer specializing in modern cinematic web experiences, you are responsible for designing and developing a premium movie discovery and streaming-inspired website with a polished UI, immersive animations, and production-level frontend quality.
