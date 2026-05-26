@@ -26,16 +26,6 @@ A premium, cinematic movie discovery platform built with React. Inspired by Netf
 
 ```bash
 npm install
-```
-
-### 2. Configure TMDB API Key (Optional — works with mock data by default)
-
-Get a free API key at [themoviedb.org](https://www.themoviedb.org/settings/api)
-
-```bash
-cp .env.example .env
-# Edit .env and paste your TMDB API key
-```
 
 ### 3. Start the development server
 
