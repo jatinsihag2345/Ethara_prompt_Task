@@ -1,349 +1,431 @@
-# Premium Modern Website / SaaS App Development Prompt
+# High-Quality Industry-Level Coding Prompt (E-Commerce Domain)
 
-I want you to act as a highly experienced senior full-stack developer, frontend architect, and UI/UX designer.
+## Context and Role
 
-Your task is to build a complete modern website or web application that feels polished, professional, and production-ready — similar in quality to products created by companies like Stripe, Linear, Framer, Notion, Vercel, Apple, or Airbnb.
+You are a Senior Full-Stack Engineer at a fast-growing e-commerce company responsible for building a modern AI-powered storefront platform for premium fashion and lifestyle products. The platform must deliver a high-performance shopping experience with immersive UI interactions, secure payment processing, scalable backend architecture, and intelligent product discovery.
 
-The final product should never feel like a generic template or beginner project. It should feel like a real startup product with thoughtful design, smooth interactions, clean architecture, and modern frontend engineering practices.
-
----
-
-# Main Goal
-
-Build a visually impressive and fully responsive website/application with:
-
-- Modern premium UI
-- Excellent user experience
-- Fast performance
-- Scalable architecture
-- Reusable components
-- Smooth animations
-- Mobile responsiveness
-- SEO optimization
-- Accessibility support
-- Dark/light mode
-- Clean and maintainable code
-- Interactive and engaging sections
-- Production-level frontend quality
-
-The website should feel modern, elegant, minimal, and highly polished.
+The application should simulate a production-grade e-commerce system used by thousands of concurrent users during high-traffic sales events.
 
 ---
 
-# Design Direction
+# Objective
 
-The design style should be:
+Develop a complete full-stack AI-enhanced e-commerce platform that:
 
-- Clean and spacious
-- Premium and modern
-- Minimal without feeling empty
-- Smooth and futuristic
-- Inspired by high-end SaaS startups
-
-Use modern design elements like:
-
-- Soft shadows
-- Rounded corners
-- Subtle gradients
-- Glassmorphism where appropriate
-- Smooth hover states
-- Elegant typography
-- Balanced whitespace
-- Responsive grid layouts
-- Micro-interactions
-- Smooth transitions and animations
-
-Avoid:
-
-- Generic Bootstrap-style layouts
-- Old-fashioned UI patterns
-- Cluttered sections
-- Poor spacing
-- Inconsistent typography
-- Basic animations
-- Low-quality styling
+* Provides a visually immersive shopping experience.
+* Implements smooth motion-based UI interactions.
+* Supports secure user authentication and checkout.
+* Includes intelligent product search and filtering.
+* Handles real-time inventory management.
+* Processes orders securely.
+* Sends transactional email notifications.
+* Maintains scalability, accessibility, and production-level performance.
 
 ---
 
-# Preferred Tech Stack
+# Core Functional Requirements
 
-## Preferred
+## 1. Storefront Experience
 
-- React
-- Next.js
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-- Shadcn/UI
+### Landing Page
 
-## Alternative
+Create a modern animated landing page that includes:
 
-If React is not suitable:
+* Hero banner with motion-based transitions
+* Featured product carousel
+* Trending categories section
+* Flash-sale countdown timer
+* Customer testimonials with animated cards
 
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-
-Follow modern development standards and best practices.
-
----
-
-# Required Sections
-
-The website/application should include:
-
-- Responsive Navbar
-- Hero Section
-- Features Section
-- About Section
-- Products or Services Section
-- Testimonials
-- Pricing Section
-- FAQ Section
-- Stats/Analytics Section
-- CTA Section
-- Contact Form
-- Newsletter Section
-- Footer
-
-Optional additions if suitable:
-
-- Authentication UI
-- Dashboard UI
-- Admin Panel Mockups
-
----
-
-# Navbar Requirements
-
-The navbar should include:
-
-- Logo
-- Navigation links
-- CTA button
-- Mobile hamburger menu
-- Sticky/floating behavior
-- Smooth transitions
-- Backdrop blur effect
-
-## Behavior Requirements
-
-- Sticky on scroll
-- Smooth animations
-- Responsive mobile navigation
-- Elegant hover interactions
-
----
-
-# Hero Section
-
-The hero section should immediately grab attention.
-
-Include:
-
-- Large compelling headline
-- Supporting subheading
-- CTA buttons
-- Product/dashboard mockup
-- Background effects
-- Floating UI elements
-- Animated visuals
-
-The overall feel should be premium, modern, and conversion-focused.
-
----
-
-# Features Section
-
-Create modern feature cards with:
-
-- Icons
-- Short descriptions
-- Hover animations
-- Responsive grid layouts
-- Consistent spacing
-
-Cards should feel interactive and visually polished.
-
----
-
-# About Section
-
-Include:
-
-- Brand/product story
-- Visual elements or mockups
-- Statistics or achievements
-- Clean split-layout design
-- Strong visual hierarchy
-
----
-
-# Testimonials Section
-
-Add realistic testimonial cards featuring:
-
-- User avatars
-- Ratings
-- Customer reviews
-- Modern card layouts or sliders
-
-The section should feel authentic and trustworthy.
-
----
-
-# Pricing Section
-
-Include:
-
-- Multiple pricing plans
-- Monthly/yearly toggle
-- Feature comparison
-- Highlighted recommended plan
-- Smooth hover effects
-
----
-
-# FAQ Section
-
-Use an accordion layout with smooth expand/collapse animations.
-
----
-
-# Contact Section
-
-The contact form should include:
-
-- Name
-- Email
-- Message
-- Validation
-- Success/error states
-- Clean and accessible UI
-
----
-
-# Footer
-
-The footer should contain:
-
-- Navigation links
-- Social icons
-- Company details
-- Newsletter form
-- Copyright text
-
-Keep it modern and visually balanced.
-
----
-
-# Animations & Interactions
-
-Use subtle, performance-friendly animations such as:
-
-- Scroll reveals
-- Fade-ins
-- Slide animations
-- Hover effects
-- Floating elements
-- Smooth transitions
-- Interactive buttons
-
-Animations should enhance the experience without feeling excessive.
-
----
-
-# Responsiveness
-
-The entire website must be:
-
-- Fully responsive
-- Mobile-first
-- Tablet optimized
-- Desktop optimized
-
-Ensure:
-
-- Proper spacing across devices
-- Responsive typography
-- Flexible layouts
-- No overflow issues
-- Touch-friendly interactions
-
----
-
-# Dark / Light Mode
+### Product Catalog
 
 Implement:
 
-- Dark/light theme toggle
-- Theme persistence
-- Smooth theme transitions
-- Proper accessibility contrast
+* Product grid with lazy loading
+* Infinite scrolling or pagination
+* Dynamic filtering:
 
-The dark mode should feel elegant and premium.
+  * Category
+  * Price range
+  * Rating
+  * Availability
+* Search with autocomplete suggestions
+* Sort options:
 
----
+  * Price
+  * Popularity
+  * New arrivals
 
-# SEO & Accessibility
+### Product Details Page
 
-Include:
+Each product page must include:
 
-- Semantic HTML
-- Proper meta tags
-- Open Graph support
-- Fast-loading pages
-- Optimized assets
-- ARIA labels
-- Keyboard accessibility
-- Screen-reader support
-
----
-
-# Performance Optimization
-
-Focus on:
-
-- Lighthouse optimization
-- Lazy loading
-- Efficient rendering
-- Code splitting
-- Optimized assets
-- Reduced layout shifts
-- Fast animations
+* Animated image gallery
+* Product zoom interaction
+* Variant selection (size/color)
+* Inventory status
+* Related products recommendation
+* Add-to-cart animation
 
 ---
 
-# Code Quality
+# UI and Animation Requirements
 
-The codebase should be:
+Use Framer Motion for all advanced UI interactions.
 
-- Clean
-- Modular
-- Scalable
-- Reusable
-- Maintainable
-- Well-structured
-- Production-ready
+Implement:
 
-Avoid:
+* Scroll-based reveal animations
+* Staggered product card transitions
+* Smooth page transitions
+* Animated modals and drawers
+* Hover-based micro-interactions
+* GPU-optimized animations using:
 
-- Duplicate logic
-- Huge messy files
-- Bad naming conventions
-- Excessive inline styles
+  * transform
+  * opacity
+
+### Performance Constraints
+
+Animations must:
+
+* Maintain 60 FPS on modern browsers
+* Avoid layout thrashing
+* Use lazy-loaded motion components
+* Not block scrolling performance
 
 ---
 
-# Suggested Folder Structure
+# Shopping Cart and Checkout Requirements
+
+## Cart System
+
+Implement:
+
+* Persistent cart using local storage or database
+* Quantity updates
+* Coupon code support
+* Dynamic price calculation
+* Tax and shipping estimation
+
+## Checkout Flow
+
+The checkout system must support:
+
+* Guest checkout
+* Logged-in checkout
+* Address validation
+* Order summary
+* Secure payment flow
+
+### Payment Integration
+
+Use Stripe or Razorpay integration.
+
+Requirements:
+
+* Secure tokenized payments
+* Webhook verification
+* Payment success/failure handling
+* Prevent duplicate transactions
+
+---
+
+# Authentication and User Management
+
+Implement secure authentication using:
+
+* JWT or NextAuth
+* OAuth (Google login optional)
+
+Features required:
+
+* User registration
+* Login/logout
+* Password hashing with bcrypt
+* Forgot password flow
+* Role-based access:
+
+  * Customer
+  * Admin
+
+---
+
+# Admin Dashboard Requirements
+
+Create an admin panel that supports:
+
+* Product CRUD operations
+* Inventory management
+* Order tracking
+* Sales analytics dashboard
+* User management
+* Revenue statistics charts
+
+### Dashboard Constraints
+
+* Protected admin routes
+* Pagination for large datasets
+* Server-side filtering
+* Optimized API queries
+
+---
+
+# Backend Requirements
+
+Build scalable APIs using:
+
+* Node.js + Express OR Next.js API Routes
+
+Implement:
+
+* RESTful architecture
+* Structured error handling
+* API validation middleware
+* Rate limiting
+* Request logging
+* Centralized error middleware
+
+### Database
+
+Use PostgreSQL or MongoDB.
+
+Required schemas:
+
+* Users
+* Products
+* Orders
+* Payments
+* Reviews
+* Inventory
+
+---
+
+# AI-Powered Features
+
+Implement at least ONE intelligent feature:
+
+### Option A — AI Product Recommendations
+
+Recommend products based on:
+
+* Browsing history
+* Cart contents
+* Similar purchases
+
+### Option B — AI Search Assistant
+
+Natural language product search such as:
+
+> “Show me affordable black sneakers under ₹3000”
+
+### Option C — AI Chat Support
+
+Provide a shopping assistant chatbot that can:
+
+* Recommend products
+* Answer shipping questions
+* Track orders
+
+---
+
+# Security Requirements
+
+The application must:
+
+* Sanitize all user inputs
+* Prevent XSS attacks
+* Prevent NoSQL/SQL injection
+* Use Helmet.js security headers
+* Protect against CSRF
+* Validate uploaded files
+* Secure environment variables
+
+---
+
+# Email and Notification System
+
+Implement transactional email notifications for:
+
+* Order confirmation
+* Shipping updates
+* Password reset
+* Payment receipt
+
+Use:
+
+* Nodemailer
+* SendGrid
+* AWS SES
+* or equivalent service
+
+---
+
+# Accessibility and SEO Requirements
+
+The platform must:
+
+* Use semantic HTML
+* Include ARIA labels
+* Pass Lighthouse accessibility checks
+* Support keyboard navigation
+* Implement SEO metadata
+* Include Open Graph tags
+* Optimize Core Web Vitals
+
+---
+
+# Performance and Scalability Requirements
+
+The system must:
+
+* Lazy-load heavy components
+* Optimize images using next/image or CDN
+* Use caching where appropriate
+* Debounce expensive API calls
+* Minimize bundle size
+* Support high concurrent traffic
+* Implement API response compression
+
+---
+
+# Technical Constraints (Explicit & Checkable)
+
+The implementation MUST satisfy ALL of the following:
+
+1. Use React or Next.js with TypeScript.
+2. Use Framer Motion for all major UI animations.
+3. Implement server-side validation for every API endpoint.
+4. Use JWT or session-based authentication.
+5. Store secrets using environment variables only.
+6. Use responsive design supporting:
+
+   * Mobile
+   * Tablet
+   * Desktop
+7. Include loading skeletons for async UI states.
+8. Maintain Lighthouse performance score above 85.
+9. Provide structured JSON API responses.
+10. Include centralized logging and error handling.
+
+---
+
+# API Response Format Requirements
+
+All API responses must follow this structure:
+
+```json
+{
+  "success": true,
+  "message": "Order created successfully",
+  "data": {},
+  "error": null
+}
+```
+
+Error responses must follow:
+
+```json
+{
+  "success": false,
+  "message": "Validation failed",
+  "data": null,
+  "error": {
+    "code": "INVALID_INPUT",
+    "details": []
+  }
+}
+```
+
+---
+
+# Folder Structure Requirements
+
+Provide a clean production-grade architecture:
 
 ```txt
-/src
+/apps
+  /client
+  /server
+
 /components
-/sections
-/hooks
-/utils
-/styles
-/assets
-/public
 /pages
+/hooks
+/services
+/utils
+/middleware
+/database
+/types
+```
+
+---
+
+# Deployment Requirements
+
+Document deployment steps for:
+
+* Frontend deployment (Vercel/Netlify)
+* Backend deployment (Render/Railway/AWS)
+* Database configuration
+* Environment setup
+* CI/CD pipeline overview
+
+---
+
+# Deliverables
+
+The final solution must include:
+
+* Complete frontend implementation
+* Backend API implementation
+* Authentication system
+* Payment integration
+* AI-powered feature
+* Admin dashboard
+* Database schema
+* Environment configuration guide
+* Setup documentation
+* Deployment instructions
+* Error handling strategy
+* Performance optimization explanation
+
+---
+
+# Technology Stack
+
+## Frontend
+
+* Next.js or React
+* TypeScript
+* Framer Motion
+* Tailwind CSS
+* React Query / Zustand / Redux Toolkit
+
+## Backend
+
+* Node.js
+* Express.js or Next.js API Routes
+
+## Database
+
+* PostgreSQL or MongoDB
+
+## Authentication
+
+* JWT / NextAuth
+
+## Payments
+
+* Stripe or Razorpay
+
+## Email
+
+* Nodemailer / SendGrid
+
+## Optional Enhancements
+
+* Redis caching
+* Docker support
+* Kubernetes deployment
+* WebSockets for live order tracking
+* Elasticsearch for advanced search
