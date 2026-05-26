@@ -2,21 +2,20 @@
 
 ## Context and Role
 
-As a Frontend Developer specializing in modern cinematic web experiences, you are responsible for designing and developing a premium movie streaming/discovery website with a sleek UI, immersive animations, and production-quality frontend architecture.
+As a Frontend Developer specializing in modern cinematic web experiences, you are responsible for designing and developing a premium movie discovery and streaming-inspired website with a polished UI, immersive animations, and production-level frontend quality.
 
-The website should feel similar in quality and polish to platforms like Netflix, Disney+, Prime Video, Letterboxd, or A24-inspired cinematic websites — while still remaining realistic, lightweight, and manageable for a portfolio-level project.
+The website should feel visually inspired by platforms like Netflix, Prime Video, Letterboxd, Disney+, and A24-style cinematic interfaces while still remaining realistic and manageable for a portfolio-level project.
 
-The goal is to create a visually engaging movie platform that combines modern UI/UX design, smooth interactions, responsive layouts, and dynamic movie browsing experiences without overengineering the backend architecture.
+The goal is to create a modern movie platform that combines:
 
-The application should prioritize:
-
-* Clean modern design
-* Smooth user experience
-* Fast performance
+* Clean UI/UX
+* Smooth interactions
 * Responsive layouts
-* Interactive movie browsing
-* Elegant animations
-* Maintainable frontend architecture
+* Dynamic movie browsing
+* Interactive animations
+* Scalable frontend structure
+
+The application should feel like a real modern startup product instead of a basic beginner project or generic template.
 
 ---
 
@@ -24,15 +23,21 @@ The application should prioritize:
 
 Develop a modern movie website that:
 
-* Displays trending and popular movies
-* Includes animated movie cards and hover interactions
-* Supports movie search and filtering
-* Uses smooth scroll animations and transitions
-* Includes detailed movie pages/modals
-* Provides a premium streaming-platform inspired UI
-* Works seamlessly across desktop, tablet, and mobile devices
+* Displays trending and popular movies dynamically
+* Includes smooth cinematic animations and transitions
+* Allows users to browse and search movies
+* Shows detailed movie information in a modal or separate page
+* Provides responsive layouts across all screen sizes
+* Uses modern frontend architecture and reusable components
+* Maintains fast performance and clean code quality
 
-The website should feel polished, cinematic, and professional while remaining beginner/intermediate friendly in implementation complexity.
+The project should prioritize:
+
+* Simplicity in implementation
+* Premium frontend quality
+* Realistic project scope
+* Human-centered UI/UX
+* Smooth and engaging interactions
 
 ---
 
@@ -40,35 +45,34 @@ The website should feel polished, cinematic, and professional while remaining be
 
 ## Design Direction
 
-The visual style should be:
+The website should follow a:
 
-* Cinematic
-* Dark-themed and immersive
-* Modern and minimal
-* Inspired by premium streaming platforms
-* Smooth and elegant
-* Content-focused
+* Cinematic dark-themed design
+* Modern streaming-platform inspired layout
+* Minimal yet immersive visual style
+* Premium and polished user experience
+* Smooth interaction-focused interface
 
-Use modern UI elements such as:
+Use modern design elements such as:
 
-* Glassmorphism effects where appropriate
 * Gradient overlays
-* Smooth hover animations
-* Backdrop blur
-* Large cinematic banners
-* Rounded cards
+* Glassmorphism where appropriate
+* Backdrop blur effects
+* Smooth hover transitions
+* Cinematic hero banners
+* Rounded movie cards
+* Floating UI elements
 * Elegant typography
-* Responsive grids
-* Floating UI interactions
-* Smooth transitions
+* Responsive grid layouts
+* Soft shadows and layered depth
 
 Avoid:
 
-* Generic Bootstrap layouts
-* Cluttered interfaces
-* Excessive text-heavy sections
-* Overly bright color palettes
-* Old-fashioned UI components
+* Generic Bootstrap-style layouts
+* Cluttered sections
+* Outdated UI components
+* Excessive text-heavy designs
+* Poor spacing and inconsistent typography
 
 ---
 
@@ -76,113 +80,118 @@ Avoid:
 
 ## Navbar
 
-The navigation bar should include:
+The navbar should include:
 
 * Website logo/branding
 * Navigation links
-* Search button/input
-* Dark/light mode toggle (optional)
+* Search functionality
 * Mobile hamburger menu
+* Optional dark/light mode toggle
 
 Behavior Requirements:
 
-* Sticky/floating navbar
-* Backdrop blur effect
-* Smooth transitions on scroll
+* Sticky/fixed navbar
+* Smooth scroll behavior
 * Responsive mobile navigation
+* Backdrop blur effect
+* Animated transitions on scroll
 
 ---
 
 ## Hero Section
 
-The hero section should feature:
+The hero section should immediately capture attention.
 
-* Featured/trending movie banner
-* Large cinematic background image/video
-* Movie title and short description
-* “Watch Now” and “View Details” buttons
-* Overlay gradients for readability
+Include:
+
+* Featured movie banner
+* Large cinematic background image
+* Movie title and description
+* “Watch Now” button
+* “More Info” button
+* Gradient overlays for readability
 * Smooth entrance animations
 
 Optional:
 
-* Auto-changing featured movies carousel
+* Auto-changing featured movie carousel
 
 ---
 
 ## Trending Movies Section
 
-Display movie cards in a responsive grid or slider layout.
+Display movies using responsive movie cards.
 
-Each movie card should include:
+Each card should include:
 
 * Movie poster
+* Title
 * Rating
 * Genre
 * Release year
-* Hover animations
-* Smooth scaling effects
-* Quick details interaction
 
 Hover Effects:
 
+* Image zoom effect
 * Card elevation
-* Image zoom
-* Glow/shadow effects
-* Animated buttons/icons
-
----
-
-## Movie Details Modal/Page
-
-Clicking a movie should open:
-
-* Detailed movie information
-* Trailer/video embed
-* Cast information
-* Ratings
-* Genres
-* Runtime
-* Description
-
-The modal/page should include:
-
-* Smooth Framer Motion animations
-* Backdrop blur overlay
-* Animated entrance/exit transitions
+* Glow/shadow animation
+* Smooth scaling transitions
+* Interactive action buttons
 
 ---
 
 ## Categories Section
 
-Include categories such as:
+Include movie categories such as:
 
 * Trending
 * Popular
 * Top Rated
 * Upcoming
 * Action
-* Sci-Fi
 * Horror
 * Comedy
+* Sci-Fi
 
-Users should be able to filter movies dynamically.
+Requirements:
+
+* Dynamic filtering
+* Responsive category layout
+* Smooth transitions between filters
+
+---
+
+## Movie Details Modal/Page
+
+When a movie is clicked:
+
+* Open a modal or dedicated details page
+* Show detailed movie information
+* Display trailer/video embed
+* Show cast, rating, runtime, and genres
+* Include smooth animated transitions
+
+Modal/Page Animations:
+
+* Fade-in effects
+* Scale transitions
+* Backdrop blur overlay
+* Smooth open/close animations
 
 ---
 
 ## Search Functionality
 
-Implement:
+Implement movie search functionality with:
 
-* Live movie search
+* Live search
 * Search suggestions
-* Responsive search UI
 * Empty-state handling
-* Smooth animated transitions
+* Smooth animated interactions
 
 Optional:
 
-* Debounced API requests
+* Debounced API requests for performance optimization
 
 ---
 
@@ -192,10 +201,10 @@ The footer should include:
 
 * Navigation links
 * Social media icons
-* Copyright text
-* Newsletter section (optional)
+* Copyright section
+* Optional newsletter section
 
-Keep the design clean and balanced.
+The footer should remain visually balanced and minimal.
 
 ---
 
@@ -203,42 +212,20 @@ Keep the design clean and balanced.
 
 Use Framer Motion for:
 
-* Page transitions
 * Scroll reveal animations
-* Movie card hover interactions
-* Modal transitions
+* Hover interactions
+* Page transitions
+* Modal animations
+* Staggered section reveals
 * Loading animations
-* Staggered section animations
 
-Animations should:
+Animation Rules:
 
-* Feel smooth and premium
-* Be performance-friendly
-* Use GPU-optimized properties
+* Keep animations smooth and subtle
 * Avoid excessive motion
-
----
-
-# Functional Requirements
-
-Implement:
-
-* Dynamic movie fetching using an API
-* Movie search functionality
-* Category filtering
-* Responsive navigation
-* Interactive movie cards
-* Modal/detail page functionality
-* Loading states/skeleton loaders
-* Error handling for failed API requests
-
-Optional Features:
-
-* Favorites/watchlist
-* Authentication UI mockup
-* Video trailer playback
-* Infinite scrolling
-* Theme toggle
+* Use GPU-friendly properties
+* Maintain scroll performance
+* Ensure responsive animation behavior
 
 ---
 
@@ -249,27 +236,49 @@ Use a movie API such as:
 * TMDB API
 * OMDb API
 
-Fetch:
+Fetch data for:
 
 * Trending movies
 * Popular movies
-* Movie details
+* Top rated movies
 * Search results
+* Movie details
 * Genres/categories
 
-Handle:
+API Handling Requirements:
 
-* API loading states
-* API failures gracefully
-* Missing images/content
+* Handle loading states properly
+* Handle failed requests gracefully
+* Prevent broken layouts from missing data
+* Use environment variables for API keys
 
-Store API keys securely using environment variables.
+---
+
+# Functional Requirements
+
+Implement:
+
+* Dynamic movie fetching
+* Responsive movie grid
+* Search functionality
+* Category filtering
+* Movie detail modal/page
+* Loading skeletons or spinners
+* Error handling UI
+
+Optional Features:
+
+* Favorites/watchlist
+* Authentication UI mockup
+* Trailer playback
+* Infinite scrolling
+* Theme toggle
 
 ---
 
 # Responsiveness Requirements
 
-The website must be:
+The entire website must be:
 
 * Fully responsive
 * Mobile-first
@@ -278,10 +287,10 @@ The website must be:
 
 Ensure:
 
+* Proper spacing on all devices
 * Responsive typography
-* Proper spacing
-* Flexible grids
-* No overflow issues
+* Flexible layouts
+* No horizontal overflow
 * Touch-friendly interactions
 
 ---
@@ -290,19 +299,19 @@ Ensure:
 
 Optimize for:
 
-* Fast loading
+* Fast loading speeds
+* Smooth rendering
+* Efficient animations
 * Lazy-loaded images
-* Optimized animations
-* Efficient rendering
 * Minimal layout shifts
-* Lighthouse performance
+* Lighthouse optimization
 
 Use:
 
-* Image optimization
-* Code splitting where appropriate
-* Debounced searches
-* Reusable UI components
+* Reusable components
+* Efficient state management
+* Debounced search functionality
+* Optimized image loading
 
 ---
 
@@ -314,9 +323,9 @@ Include:
 * Proper ARIA labels
 * Keyboard accessibility
 * Screen-reader support
-* Optimized metadata
-* Open Graph tags
-* SEO-friendly structure
+* SEO-friendly metadata
+* Open Graph meta tags
+* Proper heading hierarchy
 
 ---
 
@@ -350,18 +359,38 @@ Optional:
   /services
   /assets
   /styles
-  /context
 /public
 ```
 
+# Code Quality Requirements
+
+The codebase should be:
+
+* Clean
+* Modular
+* Reusable
+* Maintainable
+* Beginner/intermediate friendly
+* Production-style organized
+
+Avoid:
+
+* Huge messy files
+* Duplicate logic
+* Excessive inline styling
+* Poor naming conventions
+* Overengineered architecture
+
+---
+
 # Output Expectations
 
-The final website should:
+The final movie website should:
 
-* Feel like a real modern streaming platform
-* Include smooth cinematic interactions
-* Maintain clean and scalable code
+* Feel like a real streaming platform
+* Deliver a cinematic browsing experience
+* Include modern animations and interactions
+* Maintain premium UI quality
 * Be portfolio-ready
-* Have production-quality UI
-* Deliver a polished user experience
-* Remain realistic and manageable to build
+* Remain realistic and achievable to build
+* Balance simplicity with professional frontend engineering
