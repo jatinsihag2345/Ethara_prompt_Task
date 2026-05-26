@@ -1,393 +1,322 @@
-# High-Quality Industry-Level Coding Prompt (E-Commerce Domain)
+# Prompt
 
 ## Context and Role
 
-You are a Senior Full-Stack Engineer at a fast-growing e-commerce company responsible for building a modern AI-powered storefront platform for premium fashion and lifestyle products. The platform must deliver a high-performance shopping experience with immersive UI interactions, secure payment processing, scalable backend architecture, and intelligent product discovery.
+As a Frontend Developer specializing in modern cinematic web experiences, you are responsible for designing and developing a premium movie streaming/discovery website with a sleek UI, immersive animations, and production-quality frontend architecture.
 
-The application should simulate a production-grade e-commerce system used by thousands of concurrent users during high-traffic sales events.
+The website should feel similar in quality and polish to platforms like Netflix, Disney+, Prime Video, Letterboxd, or A24-inspired cinematic websites — while still remaining realistic, lightweight, and manageable for a portfolio-level project.
+
+The goal is to create a visually engaging movie platform that combines modern UI/UX design, smooth interactions, responsive layouts, and dynamic movie browsing experiences without overengineering the backend architecture.
+
+The application should prioritize:
+
+* Clean modern design
+* Smooth user experience
+* Fast performance
+* Responsive layouts
+* Interactive movie browsing
+* Elegant animations
+* Maintainable frontend architecture
 
 ---
 
 # Objective
 
-Develop a complete full-stack AI-enhanced e-commerce platform that:
+Develop a modern movie website that:
 
-* Provides a visually immersive shopping experience.
-* Implements smooth motion-based UI interactions.
-* Supports secure user authentication and checkout.
-* Includes intelligent product search and filtering.
-* Handles real-time inventory management.
-* Processes orders securely.
-* Sends transactional email notifications.
-* Maintains scalability, accessibility, and production-level performance.
+* Displays trending and popular movies
+* Includes animated movie cards and hover interactions
+* Supports movie search and filtering
+* Uses smooth scroll animations and transitions
+* Includes detailed movie pages/modals
+* Provides a premium streaming-platform inspired UI
+* Works seamlessly across desktop, tablet, and mobile devices
+
+The website should feel polished, cinematic, and professional while remaining beginner/intermediate friendly in implementation complexity.
 
 ---
 
-# Core Functional Requirements
+# UI and Design Requirements
 
-## 1. Storefront Experience
+## Design Direction
 
-### Landing Page
+The visual style should be:
 
-Create a modern animated landing page that includes:
+* Cinematic
+* Dark-themed and immersive
+* Modern and minimal
+* Inspired by premium streaming platforms
+* Smooth and elegant
+* Content-focused
 
-* Hero banner with motion-based transitions
-* Featured product carousel
-* Trending categories section
-* Flash-sale countdown timer
-* Customer testimonials with animated cards
+Use modern UI elements such as:
 
-### Product Catalog
+* Glassmorphism effects where appropriate
+* Gradient overlays
+* Smooth hover animations
+* Backdrop blur
+* Large cinematic banners
+* Rounded cards
+* Elegant typography
+* Responsive grids
+* Floating UI interactions
+* Smooth transitions
+
+Avoid:
+
+* Generic Bootstrap layouts
+* Cluttered interfaces
+* Excessive text-heavy sections
+* Overly bright color palettes
+* Old-fashioned UI components
+
+---
+
+# Required Sections
+
+## Navbar
+
+The navigation bar should include:
+
+* Website logo/branding
+* Navigation links
+* Search button/input
+* Dark/light mode toggle (optional)
+* Mobile hamburger menu
+
+Behavior Requirements:
+
+* Sticky/floating navbar
+* Backdrop blur effect
+* Smooth transitions on scroll
+* Responsive mobile navigation
+
+---
+
+## Hero Section
+
+The hero section should feature:
+
+* Featured/trending movie banner
+* Large cinematic background image/video
+* Movie title and short description
+* “Watch Now” and “View Details” buttons
+* Overlay gradients for readability
+* Smooth entrance animations
+
+Optional:
+
+* Auto-changing featured movies carousel
+
+---
+
+## Trending Movies Section
+
+Display movie cards in a responsive grid or slider layout.
+
+Each movie card should include:
+
+* Movie poster
+* Rating
+* Genre
+* Release year
+* Hover animations
+* Smooth scaling effects
+* Quick details interaction
+
+Hover Effects:
+
+* Card elevation
+* Image zoom
+* Glow/shadow effects
+* Animated buttons/icons
+
+---
+
+## Movie Details Modal/Page
+
+Clicking a movie should open:
+
+* Detailed movie information
+* Trailer/video embed
+* Cast information
+* Ratings
+* Genres
+* Runtime
+* Description
+
+The modal/page should include:
+
+* Smooth Framer Motion animations
+* Backdrop blur overlay
+* Animated entrance/exit transitions
+
+---
+
+## Categories Section
+
+Include categories such as:
+
+* Trending
+* Popular
+* Top Rated
+* Upcoming
+* Action
+* Sci-Fi
+* Horror
+* Comedy
+
+Users should be able to filter movies dynamically.
+
+---
+
+## Search Functionality
 
 Implement:
 
-* Product grid with lazy loading
-* Infinite scrolling or pagination
-* Dynamic filtering:
+* Live movie search
+* Search suggestions
+* Responsive search UI
+* Empty-state handling
+* Smooth animated transitions
 
-  * Category
-  * Price range
-  * Rating
-  * Availability
-* Search with autocomplete suggestions
-* Sort options:
+Optional:
 
-  * Price
-  * Popularity
-  * New arrivals
-
-### Product Details Page
-
-Each product page must include:
-
-* Animated image gallery
-* Product zoom interaction
-* Variant selection (size/color)
-* Inventory status
-* Related products recommendation
-* Add-to-cart animation
+* Debounced API requests
 
 ---
 
-# UI and Animation Requirements
+## Footer
 
-Use Framer Motion for all advanced UI interactions.
+The footer should include:
+
+* Navigation links
+* Social media icons
+* Copyright text
+* Newsletter section (optional)
+
+Keep the design clean and balanced.
+
+---
+
+# Animation Requirements
+
+Use Framer Motion for:
+
+* Page transitions
+* Scroll reveal animations
+* Movie card hover interactions
+* Modal transitions
+* Loading animations
+* Staggered section animations
+
+Animations should:
+
+* Feel smooth and premium
+* Be performance-friendly
+* Use GPU-optimized properties
+* Avoid excessive motion
+
+---
+
+# Functional Requirements
 
 Implement:
 
-* Scroll-based reveal animations
-* Staggered product card transitions
-* Smooth page transitions
-* Animated modals and drawers
-* Hover-based micro-interactions
-* GPU-optimized animations using:
+* Dynamic movie fetching using an API
+* Movie search functionality
+* Category filtering
+* Responsive navigation
+* Interactive movie cards
+* Modal/detail page functionality
+* Loading states/skeleton loaders
+* Error handling for failed API requests
 
-  * transform
-  * opacity
+Optional Features:
 
-### Performance Constraints
-
-Animations must:
-
-* Maintain 60 FPS on modern browsers
-* Avoid layout thrashing
-* Use lazy-loaded motion components
-* Not block scrolling performance
+* Favorites/watchlist
+* Authentication UI mockup
+* Video trailer playback
+* Infinite scrolling
+* Theme toggle
 
 ---
 
-# Shopping Cart and Checkout Requirements
+# API Requirements
 
-## Cart System
+Use a movie API such as:
 
-Implement:
+* TMDB API
+* OMDb API
 
-* Persistent cart using local storage or database
-* Quantity updates
-* Coupon code support
-* Dynamic price calculation
-* Tax and shipping estimation
+Fetch:
 
-## Checkout Flow
+* Trending movies
+* Popular movies
+* Movie details
+* Search results
+* Genres/categories
 
-The checkout system must support:
+Handle:
 
-* Guest checkout
-* Logged-in checkout
-* Address validation
-* Order summary
-* Secure payment flow
+* API loading states
+* API failures gracefully
+* Missing images/content
 
-### Payment Integration
-
-Use Stripe or Razorpay integration.
-
-Requirements:
-
-* Secure tokenized payments
-* Webhook verification
-* Payment success/failure handling
-* Prevent duplicate transactions
+Store API keys securely using environment variables.
 
 ---
 
-# Authentication and User Management
+# Responsiveness Requirements
 
-Implement secure authentication using:
+The website must be:
 
-* JWT or NextAuth
-* OAuth (Google login optional)
+* Fully responsive
+* Mobile-first
+* Tablet optimized
+* Desktop optimized
 
-Features required:
+Ensure:
 
-* User registration
-* Login/logout
-* Password hashing with bcrypt
-* Forgot password flow
-* Role-based access:
-
-  * Customer
-  * Admin
-
----
-
-# Admin Dashboard Requirements
-
-Create an admin panel that supports:
-
-* Product CRUD operations
-* Inventory management
-* Order tracking
-* Sales analytics dashboard
-* User management
-* Revenue statistics charts
-
-### Dashboard Constraints
-
-* Protected admin routes
-* Pagination for large datasets
-* Server-side filtering
-* Optimized API queries
+* Responsive typography
+* Proper spacing
+* Flexible grids
+* No overflow issues
+* Touch-friendly interactions
 
 ---
 
-# Backend Requirements
+# Performance Requirements
 
-Build scalable APIs using:
+Optimize for:
 
-* Node.js + Express OR Next.js API Routes
-
-Implement:
-
-* RESTful architecture
-* Structured error handling
-* API validation middleware
-* Rate limiting
-* Request logging
-* Centralized error middleware
-
-### Database
-
-Use PostgreSQL or MongoDB.
-
-Required schemas:
-
-* Users
-* Products
-* Orders
-* Payments
-* Reviews
-* Inventory
-
----
-
-# AI-Powered Features
-
-Implement at least ONE intelligent feature:
-
-### Option A — AI Product Recommendations
-
-Recommend products based on:
-
-* Browsing history
-* Cart contents
-* Similar purchases
-
-### Option B — AI Search Assistant
-
-Natural language product search such as:
-
-> “Show me affordable black sneakers under ₹3000”
-
-### Option C — AI Chat Support
-
-Provide a shopping assistant chatbot that can:
-
-* Recommend products
-* Answer shipping questions
-* Track orders
-
----
-
-# Security Requirements
-
-The application must:
-
-* Sanitize all user inputs
-* Prevent XSS attacks
-* Prevent NoSQL/SQL injection
-* Use Helmet.js security headers
-* Protect against CSRF
-* Validate uploaded files
-* Secure environment variables
-
----
-
-# Email and Notification System
-
-Implement transactional email notifications for:
-
-* Order confirmation
-* Shipping updates
-* Password reset
-* Payment receipt
+* Fast loading
+* Lazy-loaded images
+* Optimized animations
+* Efficient rendering
+* Minimal layout shifts
+* Lighthouse performance
 
 Use:
 
-* Nodemailer
-* SendGrid
-* AWS SES
-* or equivalent service
+* Image optimization
+* Code splitting where appropriate
+* Debounced searches
+* Reusable UI components
 
 ---
 
-# Accessibility and SEO Requirements
+# Accessibility and SEO
 
-The platform must:
+Include:
 
-* Use semantic HTML
-* Include ARIA labels
-* Pass Lighthouse accessibility checks
-* Support keyboard navigation
-* Implement SEO metadata
-* Include Open Graph tags
-* Optimize Core Web Vitals
-
----
-
-# Performance and Scalability Requirements
-
-The system must:
-
-* Lazy-load heavy components
-* Optimize images using next/image or CDN
-* Use caching where appropriate
-* Debounce expensive API calls
-* Minimize bundle size
-* Support high concurrent traffic
-* Implement API response compression
-
----
-
-# Technical Constraints (Explicit & Checkable)
-
-The implementation MUST satisfy ALL of the following:
-
-1. Use React or Next.js with TypeScript.
-2. Use Framer Motion for all major UI animations.
-3. Implement server-side validation for every API endpoint.
-4. Use JWT or session-based authentication.
-5. Store secrets using environment variables only.
-6. Use responsive design supporting:
-
-   * Mobile
-   * Tablet
-   * Desktop
-7. Include loading skeletons for async UI states.
-8. Maintain Lighthouse performance score above 85.
-9. Provide structured JSON API responses.
-10. Include centralized logging and error handling.
-
----
-
-# API Response Format Requirements
-
-All API responses must follow this structure:
-
-```json
-{
-  "success": true,
-  "message": "Order created successfully",
-  "data": {},
-  "error": null
-}
-```
-
-Error responses must follow:
-
-```json
-{
-  "success": false,
-  "message": "Validation failed",
-  "data": null,
-  "error": {
-    "code": "INVALID_INPUT",
-    "details": []
-  }
-}
-```
-
----
-
-# Folder Structure Requirements
-
-Provide a clean production-grade architecture:
-
-```txt
-/apps
-  /client
-  /server
-
-/components
-/pages
-/hooks
-/services
-/utils
-/middleware
-/database
-/types
-```
-
----
-
-# Deployment Requirements
-
-Document deployment steps for:
-
-* Frontend deployment (Vercel/Netlify)
-* Backend deployment (Render/Railway/AWS)
-* Database configuration
-* Environment setup
-* CI/CD pipeline overview
-
----
-
-# Deliverables
-
-The final solution must include:
-
-* Complete frontend implementation
-* Backend API implementation
-* Authentication system
-* Payment integration
-* AI-powered feature
-* Admin dashboard
-* Database schema
-* Environment configuration guide
-* Setup documentation
-* Deployment instructions
-* Error handling strategy
-* Performance optimization explanation
+* Semantic HTML
+* Proper ARIA labels
+* Keyboard accessibility
+* Screen-reader support
+* Optimized metadata
+* Open Graph tags
+* SEO-friendly structure
 
 ---
 
@@ -395,37 +324,44 @@ The final solution must include:
 
 ## Frontend
 
-* Next.js or React
-* TypeScript
-* Framer Motion
+Use:
+
+* React or Next.js
 * Tailwind CSS
-* React Query / Zustand / Redux Toolkit
+* Framer Motion
 
-## Backend
+Optional:
 
-* Node.js
-* Express.js or Next.js API Routes
+* TypeScript
+* Shadcn/UI
 
-## Database
+---
 
-* PostgreSQL or MongoDB
+# Suggested Folder Structure
 
-## Authentication
+```bash
+/src
+  /components
+  /sections
+  /pages
+  /layouts
+  /hooks
+  /utils
+  /services
+  /assets
+  /styles
+  /context
+/public
+```
 
-* JWT / NextAuth
+# Output Expectations
 
-## Payments
+The final website should:
 
-* Stripe or Razorpay
-
-## Email
-
-* Nodemailer / SendGrid
-
-## Optional Enhancements
-
-* Redis caching
-* Docker support
-* Kubernetes deployment
-* WebSockets for live order tracking
-* Elasticsearch for advanced search
+* Feel like a real modern streaming platform
+* Include smooth cinematic interactions
+* Maintain clean and scalable code
+* Be portfolio-ready
+* Have production-quality UI
+* Deliver a polished user experience
+* Remain realistic and manageable to build
