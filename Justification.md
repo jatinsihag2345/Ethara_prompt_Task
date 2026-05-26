@@ -1,6 +1,4 @@
-# Dual Response Evaluation for Premium SaaS Website Development Prompt
 
-Source Prompt: Based on uploaded file.
 
 ---
 
