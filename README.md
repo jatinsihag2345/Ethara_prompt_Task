@@ -1,383 +1,140 @@
-# Ethara_prompt_Task
-# Modern SaaS Website
+# 🎬 CineVerse — Cinema Reimagined
 
-A premium modern SaaS-style website built with cutting-edge frontend technologies, smooth animations, responsive layouts, reusable architecture, and production-ready engineering practices.
+A premium, cinematic movie discovery platform built with React. Inspired by Netflix, Disney+, and A24's visual language.
 
-Inspired by modern platforms like Stripe, Linear, Vercel, Framer, and Notion.
-
----
-
-# 🌐 Live Demo
-
-👉 https://fabulous-churros-f204aa.netlify.app/
+![CineVerse Preview](https://placehold.co/1200x630/050505/e8c97a?text=CineVerse+—+Cinema+Reimagined)
 
 ---
 
-# ✨ Features
+## ✨ Features
 
-- Modern premium UI/UX
-- Fully responsive design
-- Mobile-first architecture
-- Smooth animations & transitions
-- Dark / Light mode
-- Reusable components
-- SEO optimized
-- Performance optimized
-- Clean folder structure
-- Scalable architecture
-- Accessible UI
-- Professional typography & spacing
-- Modern gradients & glassmorphism
-- Sticky responsive navbar
-- Interactive sections
-- Optimized loading performance
+- **Cinematic Hero** — Auto-rotating featured film banner with smooth transitions
+- **Movie Rows** — Horizontally scrollable carousels with hover interactions
+- **Movie Modal** — Detailed film view with cast, ratings, trailer links & similar films
+- **Live Search** — Debounced real-time movie search with empty-state handling
+- **Category Filter** — Sticky filter bar: Trending, Popular, Top Rated, Genres
+- **Watchlist** — Persistent watchlist saved to localStorage
+- **Featured Banner** — Editor's pick inline banner
+- **Dark Theme** — Immersive black + gold aesthetic with glassmorphism
+- **Fully Responsive** — Mobile, tablet, and desktop optimized
 
 ---
 
-# 🛠 Tech Stack
+## 🚀 Quick Start
 
-## Frontend
-- React / Next.js
-- Tailwind CSS
-- TypeScript
-- Framer Motion
-
-OR
-
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-
-## Deployment
-- Vercel
-- Netlify
-- GitHub Pages
-
----
-
-# 📁 Project Structure
-
-```bash
-modern-saas-website/
-│
-├── public/
-│   ├── images/
-│   ├── icons/
-│   └── favicon.ico
-│
-├── src/
-│   ├── components/
-│   │   ├── Navbar/
-│   │   ├── Hero/
-│   │   ├── Features/
-│   │   ├── Pricing/
-│   │   ├── Testimonials/
-│   │   ├── FAQ/
-│   │   ├── Contact/
-│   │   └── Footer/
-│   │
-│   ├── pages/
-│   │   └── Home.jsx
-│   │
-│   ├── hooks/
-│   │   └── useTheme.js
-│   │
-│   ├── utils/
-│   │   └── constants.js
-│   │
-│   ├── styles/
-│   │   └── globals.css
-│   │
-│   ├── App.jsx
-│   └── main.jsx
-│
-├── package.json
-├── tailwind.config.js
-├── vite.config.js
-└── README.md
-```
-
----
-
-# 🚀 Installation
-
-## Clone Repository
-
-```bash
-git clone https://github.com/yourusername/modern-saas-website.git
-```
-
-## Navigate Into Folder
-
-```bash
-cd modern-saas-website
-```
-
-## Install Dependencies
+### 1. Install dependencies
 
 ```bash
 npm install
 ```
 
----
+### 2. Configure TMDB API Key (Optional — works with mock data by default)
 
-# ▶️ Run Development Server
-
-```bash
-npm run dev
-```
-
-Open in browser:
+Get a free API key at [themoviedb.org](https://www.themoviedb.org/settings/api)
 
 ```bash
-http://localhost:5173
+cp .env.example .env
+# Edit .env and paste your TMDB API key
 ```
 
----
-
-# 🏗 Build for Production
+### 3. Start the development server
 
 ```bash
-npm run build
+npm start
 ```
 
----
+Open [http://localhost:3000](http://localhost:3000) to view it.
 
-# 👀 Preview Production Build
-
-```bash
-npm run preview
-```
-
----
-
-# 🌐 Deployment
-
-## Deploy on Vercel
-
-### Install Vercel CLI
-
-```bash
-npm install -g vercel
-```
-
-### Deploy
-
-```bash
-vercel
-```
-
----
-
-## Deploy on Netlify
-
-1. Push project to GitHub
-2. Login to Netlify
-3. Import Repository
-4. Configure build settings
-5. Deploy
-
-Build command:
+### 4. Build for production
 
 ```bash
 npm run build
 ```
 
-Publish directory:
+---
 
-```bash
-dist
+## 🗂 Project Structure
+
+```
+src/
+├── components/
+│   ├── Navbar.js          # Sticky nav with search, watchlist, mobile menu
+│   ├── MovieCard.js       # Individual movie card with hover effects
+│   ├── MovieModal.js      # Full detail modal with cast, trailer, similar
+│   └── Footer.js          # Links, newsletter, social icons
+├── sections/
+│   ├── Hero.js            # Cinematic hero with auto-rotating carousel
+│   ├── MovieRow.js        # Scrollable movie carousel section
+│   ├── CategoryFilter.js  # Sticky category/genre filter bar
+│   └── SearchResults.js   # Search results grid view
+├── context/
+│   └── MovieContext.js    # Global state: selectedMovie, watchlist, search
+├── hooks/
+│   └── useMovies.js       # Data-fetching hooks (trending, popular, search…)
+├── services/
+│   └── movieAPI.js        # TMDB API calls + mock data fallback
+├── utils/
+│   └── helpers.js         # Image URLs, formatting, rating colors
+└── styles/
+    └── globals.css        # Design tokens, base styles, animations
 ```
 
 ---
 
-# 🎨 Design System
+## 🎨 Design System
 
-## UI Principles
-
-- Minimal & premium
-- Spacious layouts
-- Consistent typography
-- Smooth interactions
-- Balanced whitespace
-- Soft shadows
-- Modern gradients
-- Glassmorphism effects
-
-## Color Palette
-
-Example:
-
-```css
-Primary: #6366F1
-Secondary: #8B5CF6
-Background: #0F172A
-Text: #F8FAFC
-Accent: #06B6D4
-```
+| Token | Value |
+|-------|-------|
+| Primary BG | `#050505` |
+| Surface | `#111118` |
+| Accent Gold | `#e8c97a` |
+| Text Primary | `#f0ece3` |
+| Text Muted | `#5c5869` |
+| Display Font | Playfair Display |
+| Heading Font | Bebas Neue |
+| Body Font | DM Sans |
 
 ---
 
-# 📱 Responsive Design
+## 🔌 API
 
-Optimized for:
+Powered by [TMDB](https://www.themoviedb.org/). Without an API key, the app runs on built-in mock data so you can explore the UI immediately.
 
-- Mobile devices
-- Tablets
-- Laptops
-- Large desktops
-
-Features:
-- Responsive typography
-- Adaptive layouts
-- Flexible grids
-- Mobile navigation
-- Touch-friendly interactions
+Endpoints used:
+- `/trending/movie/week`
+- `/movie/popular`
+- `/movie/top_rated`
+- `/movie/upcoming`
+- `/movie/now_playing`
+- `/search/movie`
+- `/movie/{id}` (with credits, videos, similar)
 
 ---
 
-# 🌙 Dark Mode
+## 📦 Tech Stack
 
-Includes:
-- Dark/light theme toggle
-- Theme persistence
-- Smooth transitions
-- Accessible contrast ratios
-
----
-
-# ⚡ Performance Optimizations
-
-- Lazy loading
-- Optimized assets
-- Code splitting
-- Reduced layout shift
-- GPU-accelerated animations
-- Minified production build
-- Optimized rendering
+- **React 18** — UI framework
+- **Custom CSS** — Design tokens, animations, glassmorphism (no Tailwind required at runtime)
+- **TMDB API** — Movie data
+- **localStorage** — Watchlist persistence
 
 ---
 
-# 🔍 SEO Optimization
+## 🛠 Extending the Project
 
-Implemented:
-- Semantic HTML
-- Meta tags
-- Open Graph tags
-- Proper heading hierarchy
-- Optimized page structure
-- Fast loading speeds
-
----
-
-# ♿ Accessibility
-
-Supports:
-- Keyboard navigation
-- ARIA labels
-- Proper semantic structure
-- Color contrast compliance
-- Screen reader support
+- Add **React Router** for dedicated movie detail pages
+- Add **Framer Motion** for page transitions
+- Add **TypeScript** for type safety
+- Add **React Query** for caching and background refetching
+- Add **Authentication** with Firebase or Auth0
+- Add **Infinite Scroll** with IntersectionObserver
 
 ---
 
-# 🎬 Animations
+## 📝 License
 
-Built using:
-- Framer Motion
-- CSS transitions
-- Intersection Observer API
-
-Includes:
-- Fade animations
-- Scroll reveals
-- Hover effects
-- Floating UI effects
-- Smooth transitions
+MIT — free to use for portfolio and personal projects.
 
 ---
 
-# 🧹 Code Quality
-
-Codebase follows:
-- Component-based architecture
-- Reusable patterns
-- Clean naming conventions
-- Modular structure
-- Maintainable styling
-- Scalable practices
-
----
-
-# 📦 Recommended Extensions
-
-VS Code:
-- ES7+ React Snippets
-- Tailwind CSS IntelliSense
-- Prettier
-- ESLint
-- Auto Rename Tag
-
----
-
-# 🛡 Best Practices Used
-
-✅ Mobile-first development  
-✅ Clean architecture  
-✅ Responsive design  
-✅ Reusable components  
-✅ SEO optimization  
-✅ Accessibility support  
-✅ Performance optimization  
-✅ Scalable structure  
-✅ Modern animations  
-✅ Production-ready code  
-
----
-
-# 🔥 Future Improvements
-
-Possible additions:
-- Authentication system
-- Dashboard analytics
-- CMS integration
-- API integration
-- Payment gateway
-- Blog system
-- AI features
-- Multi-language support
-- Advanced charts
-- Real-time features
-
----
-
-# 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-# ❤️ Credits
-
-Designed & developed using modern frontend engineering principles and premium SaaS UI inspiration.
-
-Inspired by:
-- Stripe
-- Vercel
-- Linear
-- Framer
-- Notion
-- Apple
-
----
-
-# ⭐ Final Note
-
-This project is built to serve as:
-- A premium SaaS starter template
-- Production-ready frontend foundation
-- Modern UI/UX reference
-- Portfolio-quality project
-- Startup landing page base
-
-Built with scalability, performance, and beautiful user experience in mind.
+*Built with ❤ for cinema lovers. Data provided by [TMDB](https://www.themoviedb.org/).*
